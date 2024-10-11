@@ -1,0 +1,33 @@
+name: GH Actions on Django​
+
+​
+
+on:​
+
+  push:​
+
+    branches:​
+
+      - 'main'​
+
+  pull_request:​
+
+    branches:​
+
+      - 'main'​
+
+​
+
+jobs:​
+
+  GH:  # job ID​
+
+    runs-on: ubuntu-latest  # OS container on which the job will run​
+
+​
+
+    steps:​
+
+      - name: Printing GH Actions​
+
+        run: echo "some push/pull actions have occurred"​
