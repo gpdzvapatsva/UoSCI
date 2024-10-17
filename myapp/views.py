@@ -10,4 +10,6 @@ def records(request):
     students=Students
     context={'students':students}
     return render (request, 'records.html')
+def contacts(request):
+    return render (request, 'contacts.html')
 
