@@ -10,5 +10,4 @@ def records(request):
     students=Students
     context={'students':students}
     return render (request, 'records.html')
-def contact(request):
-    return render(request, template_name='contact.html')
+
