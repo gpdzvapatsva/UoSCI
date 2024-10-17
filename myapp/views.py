@@ -1,15 +1,15 @@
 from django.shortcuts import render
 
-from myapp.models import Students
+from .models import Students
 
 
 # Create your views here.
 def index(request):
     return render (request, 'index.html')
 def records(request):
-    students=Students
+    students=Students.objects.all()
     context={'students':students}
-    return render (request, 'records.html')
+    return render (request, 'records.html', context)
 def contacts(request):
     return render (request, 'contacts.html')
 
