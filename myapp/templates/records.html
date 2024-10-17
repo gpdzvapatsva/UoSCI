@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>GPD</title>
+       {% load static %}
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}">
 </head>
 <body>
+ <header>
+        <div class="logo">
+           <a href="#"class="mylogo">GPD</a>
+        </div>
+        <nav>
+            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#">Records</a>
+            <a class="nav-link" href="#">Contact</a>
+
+        </nav>
+    </header>
 <h1> Student Records</h1>
 <ul>
 {% for students in students  %}
